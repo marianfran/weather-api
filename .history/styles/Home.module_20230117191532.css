@@ -23,19 +23,12 @@
 }
 
 .weathertext {
-  font-weight: 450;
-  font-size: 22px;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .weathertexttwo {
   font-style: italic;
-  font-weight: 400;
-}
-
-.locationname {
-  color: pink;
-  font-size: 35px;
-  font-weight: 600;
 }
 
 .weatherdescription {
@@ -59,6 +52,10 @@
 .header {
   font-family: sans-serif;
   color: whitesmoke;
+}
+
+.index {
+  color: white;
 }
 
 

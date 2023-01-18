@@ -59,18 +59,21 @@ export default function Home() {
           type="text"
         />
 
-        <div className={styles.locationname}>{data.name}</div>
+        {data.name}
         {
           weather && weather.map((w, index) => {
             return (
               <div className={styles.inputbox} key={index}>
 
                 <div className={styles.weatherdescription}>
-                  <div className={styles.weathertext}>{w.description}</div>
-                  <div className={styles.weathertexttwo}>{w.main}</div>
+                  <div>{w.description}</div>
+                  <div className={styles.location}>{w.main}</div>
 
-                  <div> <p> Temperature: {data.main.temp} °C </p></div> 
-                  <div> <p> Feels Like: {data.main.feels_like} °C </p></div> 
+                  <h3>Temperature:</h3>
+                    <div> <p>{data.main.temp} °C </p></div> 
+                  
+                  <h3>Feels Like:</h3>
+                    <div> <p>{data.main.feels_like} °C </p></div> 
                   <div> <p> Wind Speed: {data.wind.speed} m/s </p></div> 
                 </div>
 

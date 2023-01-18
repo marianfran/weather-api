@@ -22,20 +22,8 @@
   color: whitesmoke;
 }
 
-.weathertext {
-  font-weight: 450;
-  font-size: 22px;
-}
-
-.weathertexttwo {
-  font-style: italic;
-  font-weight: 400;
-}
-
-.locationname {
-  color: pink;
-  font-size: 35px;
-  font-weight: 600;
+.temperature {
+  font-size: 25px;
 }
 
 .weatherdescription {
@@ -49,11 +37,9 @@
 
 .inputbox {
   padding:10px;
-  margin-bottom: 15px;
   border-radius: 30px;
   border-color: whitesmoke;
-  color: rgb(116, 0, 116);
-  font-weight: bold;
+  color: rgb(39, 1, 39);
 }
 
 .header {

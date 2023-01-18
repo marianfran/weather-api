@@ -1,7 +1,7 @@
 .container {
   padding: 0 2rem;
   background-image: url('/nightsky.svg');
-  background-size: cover; 
+  background-repeat: no-repeat,
 }
 
 .main {
@@ -18,49 +18,16 @@
   position: relative;
 }
 
-.location {
-  color: whitesmoke;
-}
-
-.weathertext {
-  font-weight: 450;
-  font-size: 22px;
-}
-
-.weathertexttwo {
-  font-style: italic;
-  font-weight: 400;
-}
-
-.locationname {
-  color: pink;
-  font-size: 35px;
-  font-weight: 600;
-}
-
 .weatherdescription {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
-  color: whitesmoke;
 }
 
 .inputbox {
   padding:10px;
-  margin-bottom: 15px;
-  border-radius: 30px;
-  border-color: whitesmoke;
-  color: rgb(116, 0, 116);
-  font-weight: bold;
 }
-
-.header {
-  font-family: sans-serif;
-  color: whitesmoke;
-}
-
 
 .footer {
   display: flex;

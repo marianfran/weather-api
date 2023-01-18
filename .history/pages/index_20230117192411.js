@@ -59,11 +59,12 @@ export default function Home() {
           type="text"
         />
 
-        <div className={styles.locationname}>{data.name}</div>
+        {data.name}
         {
           weather && weather.map((w, index) => {
             return (
               <div className={styles.inputbox} key={index}>
+                <h1>{data.name}</h1>
 
                 <div className={styles.weatherdescription}>
                   <div className={styles.weathertext}>{w.description}</div>

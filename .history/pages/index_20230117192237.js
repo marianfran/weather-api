@@ -59,7 +59,7 @@ export default function Home() {
           type="text"
         />
 
-        <div className={styles.locationname}>{data.name}</div>
+        {data.name}
         {
           weather && weather.map((w, index) => {
             return (

@@ -59,7 +59,7 @@ export default function Home() {
           type="text"
         />
 
-        <div className={styles.locationname}>{data.name}</div>
+        {data.name}
         {
           weather && weather.map((w, index) => {
             return (
@@ -68,7 +68,7 @@ export default function Home() {
                 <div className={styles.weatherdescription}>
                   <div className={styles.weathertext}>{w.description}</div>
                   <div className={styles.weathertexttwo}>{w.main}</div>
-
+                  
                   <div> <p> Temperature: {data.main.temp} °C </p></div> 
                   <div> <p> Feels Like: {data.main.feels_like} °C </p></div> 
                   <div> <p> Wind Speed: {data.wind.speed} m/s </p></div> 

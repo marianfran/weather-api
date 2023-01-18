@@ -45,35 +45,22 @@ export default function Home() {
 
       <main className={styles.main}>
         {errorMessage}
-
-        <div className={styles.header}>
-          <h2>What's the Weather Today?</h2>
-        </div>
-
         <input 
-          className={styles.inputbox}
           value={location}
           onChange={event => setLocation(event.target.value)}
           placeholder="Enter location"
           onKeyDown={searchLocation}
           type="text"
         />
-
-        <div className={styles.locationname}>{data.name}</div>
+        {data.name}
         {
           weather && weather.map((w, index) => {
             return (
-              <div className={styles.inputbox} key={index}>
-
-                <div className={styles.weatherdescription}>
-                  <div className={styles.weathertext}>{w.description}</div>
-                  <div className={styles.weathertexttwo}>{w.main}</div>
-
-                  <div> <p> Temperature: {data.main.temp} °C </p></div> 
-                  <div> <p> Feels Like: {data.main.feels_like} °C </p></div> 
-                  <div> <p> Wind Speed: {data.wind.speed} m/s </p></div> 
-                </div>
-
+              <div key={index}>
+                <div>{w.description}</div>
+                <div>{w.main}</div>
+                <div>{data.main.temp}</div> 
+                <div>{w.main.feels_like}</div> 
               </div>
             )
           })
