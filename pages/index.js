@@ -71,7 +71,7 @@ export default function Home() {
 
                   <div> <p> Temperature: {data.main.temp} °C </p></div> 
                   <div> <p> Feels Like: {data.main.feels_like} °C </p></div> 
-                  <div> <p> Wind Speed: {data.wind.speed} m/s </p></div> 
+                  <div> <p> Wind Speed: {data.wind.gust} m/s </p></div> 
                 </div>
 
               </div>
